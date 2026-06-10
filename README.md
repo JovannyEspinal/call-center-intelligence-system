@@ -1,6 +1,8 @@
-# Call Center Intelligence System
+# Themis
 
 An AI pipeline that turns raw call-center audio into auditable QA scorecards, compliance flags, and redacted reports — built so that no unredacted text ever reaches an LLM, and no quality score ever comes from one.
+
+Named after the Greek Titaness of justice, who weighs evidence before passing judgment.
 
 <img width=55% alt="Compiled LangGraph pipeline" src="docs/graph.png" />
 
@@ -100,8 +102,8 @@ TRANSCRIPTION_BACKEND=openai_diarized   # or faster_whisper for local STT
 Or with Docker:
 
 ```bash
-docker build -t call-center-intelligence-system .
-docker run --rm --env-file .env -p 7860:7860 call-center-intelligence-system
+docker build -t themis .
+docker run --rm --env-file .env -p 7860:7860 themis
 ```
 
 <details>

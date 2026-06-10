@@ -1,5 +1,5 @@
 [project]
-name = "call-center-intelligence-system"
+name = "themis"
 version = "0.1.0"
 description = "AI-powered multi-agent call center analysis pipeline."
 readme = "README.md"
