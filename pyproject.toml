@@ -1,0 +1,44 @@
+[project]
+name = "call-center-intelligence-system"
+version = "0.1.0"
+description = "AI-powered multi-agent call center analysis pipeline."
+readme = "README.md"
+requires-python = ">=3.11,<3.13"
+dependencies = [
+    "faster-whisper>=1.1.0",
+    "gradio>=5.0.0",
+    "langchain-google-genai>=2.0.0",
+    "langchain-groq>=0.2.0",
+    "langchain-openai>=0.2.0",
+    "langgraph>=0.4.0",
+    "langsmith>=0.1.0",
+    "mutagen>=1.47.0",
+    "pydantic>=2.8.0",
+    "python-dotenv>=1.0.1",
+    "reportlab>=4.2.0",
+    "sqlalchemy>=2.0.0",
+    "tenacity>=8.5.0",
+]
+
+[dependency-groups]
+dev = [
+    "pytest>=8.3.0",
+    "pytest-cov>=5.0.0",
+    "ruff>=0.6.0",
+]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["."]
+addopts = "-ra"
+
+[tool.ruff]
+line-length = 88
+target-version = "py311"
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "UP", "B"]
+
+[tool.ruff.format]
+quote-style = "double"
+indent-style = "space"

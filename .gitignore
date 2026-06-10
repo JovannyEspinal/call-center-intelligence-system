@@ -1,0 +1,37 @@
+# Environment and secrets
+.env
+.env.*
+!.env.example
+
+# Python
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+.venv/
+
+# Build artifacts
+build/
+dist/
+*.egg-info/
+
+# Runtime data
+data/audio/
+data/*.db
+data/*.sqlite
+data/db_backups/
+reports/
+*.log
+
+# Internal process artifacts (not part of the portfolio repo)
+IMPLEMENTATION_PLAN.md
+docs/superpowers/
+docs/screenshots/
+docs/final-rubric-audit.md
+
+# Local/editor files
+.DS_Store
+.idea/
+.vscode/
